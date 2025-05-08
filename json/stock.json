@@ -1,0 +1,96 @@
+[
+    {
+        "id": 1,
+        "name": "Apple Juice",
+        "category": "Beverage",
+        "price": 2.5,
+        "stock": 100,
+        "comment": "Low Stock"
+    },
+    {
+        "id": 2,
+        "name": "Banana",
+        "category": "Fruit",
+        "price": 0.3,
+        "stock": 120,
+        "comment": "High Stock"
+    },
+    {
+        "id": 3,
+        "name": "Whole Wheat Bread",
+        "category": "Bakery",
+        "price": 1.8,
+        "stock": 30,
+        "comment": "Low Stock"
+    },
+    {
+        "id": 4,
+        "name": "Milk 1L",
+        "category": "Dairy",
+        "price": 1.5,
+        "stock": 80,
+        "comment": "High Stock"
+    },
+    {
+        "id": 5,
+        "name": "Eggs Pack (12)",
+        "category": "Dairy",
+        "price": 2.2,
+        "stock": 60,
+        "comment": "High Stock"
+    },
+    {
+        "id": 6,
+        "name": "Tomatoes",
+        "category": "Vegetable",
+        "price": 1.0,
+        "stock": 100,
+        "comment": "High Stock"
+    },
+    {
+        "id": 7,
+        "name": "Chicken Breast",
+        "category": "Meat",
+        "price": 5.5,
+        "stock": 25,
+        "comment": "Low Stock"
+    },
+    {
+        "id": 8,
+        "name": "Cereal",
+        "category": "Grocery",
+        "price": 3.0,
+        "stock": 40,
+        "comment": "Low Stock"
+    },
+    {
+        "id": 9,
+        "name": "Yogurt",
+        "category": "Dairy",
+        "price": 0.9,
+        "stock": 75,
+        "comment": "High Stock"
+    },
+    {
+        "id": 10,
+        "name": "Orange Juice",
+        "category": "Beverage",
+        "price": 2.8,
+        "stock": 45,
+        "comment": "Low Stock"
+    },
+    {
+        "id": 10,
+        "name": "10",
+        "category": "10",
+        "price": 10.0,
+        "stock": 10
+    },
+    {
+        "id": 11,
+        "name": "yoel",
+        "category": "1",
+        "price": 10.0,
+        "stock": 10
+    }
+]
