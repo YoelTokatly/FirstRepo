@@ -1,0 +1,64 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "title": "Python 101",
+            "author": "John Doe",
+            "ratings": [
+                5,
+                4,
+                5
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Learn JavaScript",
+            "author": "Jane Smith",
+            "ratings": [
+                4,
+                5,
+                3
+            ]
+        },
+        {
+            "id": 3,
+            "title": "New Book",
+            "author": "New Author",
+            "ratings": [
+                5,
+                4,
+                3
+            ]
+        },
+        {
+            "id": 4,
+            "title": "New Book",
+            "author": "New Author",
+            "ratings": [
+                5,
+                4,
+                3
+            ]
+        },
+        {
+            "id": 5,
+            "title": "new book",
+            "author": "New Author",
+            "ratings": [
+                5,
+                4,
+                3
+            ]
+        },
+        {
+            "id": 6,
+            "title": "new book22",
+            "author": "New Author",
+            "ratings": [
+                5,
+                4,
+                3
+            ]
+        }
+    ]
+}
