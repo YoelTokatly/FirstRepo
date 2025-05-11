@@ -1,0 +1,50 @@
+{
+    "tapu-fini": {
+        "name": "tapu-fini",
+        "id": 788,
+        "height": 13,
+        "weight": 212,
+        "types": [
+            "water",
+            "fairy"
+        ],
+        "abilities": [
+            "misty-surge",
+            "telepathy"
+        ],
+        "stats": {
+            "hp": 70,
+            "attack": 75,
+            "defense": 115,
+            "special-attack": 95,
+            "special-defense": 130,
+            "speed": 85
+        },
+        "base_experience": 285,
+        "caught_at": "2025-05-11T13:38:49.004787"
+    },
+    "zigzagoon": {
+        "name": "zigzagoon",
+        "id": 263,
+        "height": 4,
+        "weight": 175,
+        "types": [
+            "normal"
+        ],
+        "abilities": [
+            "pickup",
+            "gluttony",
+            "quick-feet"
+        ],
+        "stats": {
+            "hp": 38,
+            "attack": 30,
+            "defense": 41,
+            "special-attack": 30,
+            "special-defense": 41,
+            "speed": 60
+        },
+        "base_experience": 56,
+        "caught_at": "2025-05-11T13:39:05.891779"
+    }
+}
