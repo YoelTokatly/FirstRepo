@@ -8,10 +8,10 @@ s3_client = boto3.client('s3')
 sns_client = boto3.client('sns')
 
 # Configuration
-BUCKET1_NAME = 'my-first-bucket-' + str(int(time.time()))
-BUCKET2_NAME = 'my-second-bucket-' + str(int(time.time()))
-EMAIL_ADDRESS = 'your-email@example.com'  # Replace with your email
-REGION = 'us-east-1'  # Replace with your preferred region
+BUCKET1_NAME = 'dst-sales-' + str(int(time.time()))
+BUCKET2_NAME = 'dst-sales-sr1' + str(int(time.time()))
+EMAIL_ADDRESS = 'yoel2707@gmail.com'  
+REGION = 'us-west-2'  
 
 def create_buckets():
     """Create two S3 buckets"""
@@ -20,7 +20,7 @@ def create_buckets():
     
     for bucket_name in buckets:
         try:
-            if REGION == 'us-east-1':
+            if REGION == 'us-west-2' :
                 s3_client.create_bucket(Bucket=bucket_name)
             else:
                 s3_client.create_bucket(
@@ -38,8 +38,8 @@ def create_buckets():
     return created_buckets
 
 def create_sns_topic():
-    """Create SNS topic and subscribe email"""
-    topic_name = 'FileMovementNotification'
+    
+    topic_name = 'SalesRepUpdate'
     
     try:
         # Create SNS topic
@@ -61,16 +61,7 @@ def create_sns_topic():
         return None
 
 def create_sample_files():
-    """Create sample files with prefixes sr1_, sr2_, sr3_"""
-    files = [
-        'sr1_customer_data.txt',
-        'sr1_report.csv',
-        'sr1_analysis.json',
-        'sr2_customer_info.txt',
-        'sr2_transactions.csv',
-        'sr3_customer_feedback.txt',
-        'sr3_sales_data.csv'
-    ]
+    files= ['dr1.csv','dr2.csv','dr3.csv']
     
     for file_name in files:
         with open(file_name, 'w') as f:
@@ -95,7 +86,6 @@ def upload_files_to_bucket(bucket_name, files, folder_name='customer-details'):
     return uploaded_files
 
 def list_and_move_sr1_files(bucket_name, source_folder='customer-details', dest_folder='sr1'):
-    """List files with sr1_ prefix and move them to sr1/ folder"""
     moved_files = []
     
     try:
@@ -217,8 +207,4 @@ def main():
         print(f"  Error listing files: {e}")
 
 if __name__ == "__main__":
-    # Make sure to replace EMAIL_ADDRESS with your actual email
-    if EMAIL_ADDRESS == 'your-email@example.com':
-        print("Please update EMAIL_ADDRESS with your actual email address")
-    else:
         main()
